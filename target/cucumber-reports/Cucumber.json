@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-05-15T08:56:58.141Z",
+        "start_timestamp": "2023-05-15T15:54:44.343Z",
         "before": [
           {
             "result": {
-              "duration": 4988900,
+              "duration": 3989800,
               "status": "passed"
             },
             "match": {
@@ -24,11 +24,11 @@
         "steps": [
           {
             "result": {
-              "duration": 5982700,
+              "duration": 4986700,
               "status": "passed"
             },
             "line": 5,
-            "name": "Create user payload \"nikhil\",\"patil@tipai\",\"male\",\"active\"",
+            "name": "Create user payload \"nikhil\",\"patil@ttipai\",\"male\",\"active\"",
             "match": {
               "arguments": [
                 {
@@ -36,16 +36,16 @@
                   "offset": 20
                 },
                 {
-                  "val": "\"patil@tipai\"",
+                  "val": "\"patil@ttipai\"",
                   "offset": 29
                 },
                 {
                   "val": "\"male\"",
-                  "offset": 43
+                  "offset": 44
                 },
                 {
                   "val": "\"active\"",
-                  "offset": 50
+                  "offset": 51
                 }
               ],
               "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.create_user_payload(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 6970076700,
+              "duration": 4721684500,
               "status": "passed"
             },
             "line": 6,
@@ -66,7 +66,7 @@
           },
           {
             "result": {
-              "duration": 6981400,
+              "duration": 5046800,
               "status": "passed"
             },
             "line": 7,
@@ -105,7 +105,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-05-15T08:57:05.371Z",
+        "start_timestamp": "2023-05-15T15:54:49.229Z",
         "line": 6,
         "name": "Delete User API test scenario",
         "description": "",
@@ -113,7 +113,7 @@
         "after": [
           {
             "result": {
-              "duration": 1997200,
+              "duration": 1994800,
               "status": "passed"
             },
             "match": {
@@ -126,7 +126,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1369845900,
+              "duration": 933342200,
               "status": "passed"
             },
             "line": 7,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 338095600,
+              "duration": 254748900,
               "status": "passed"
             },
             "line": 8,

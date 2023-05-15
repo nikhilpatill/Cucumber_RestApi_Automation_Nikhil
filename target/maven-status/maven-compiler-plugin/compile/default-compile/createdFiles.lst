@@ -1,6 +1,4 @@
-.cucumber\cucumber.stepDefinitions.tmp
 PojoClasses\CreateUser_Date.class
 PojoClasses\UpdateUser_Date.class
 Hashmap_apiBody\package-info.class
 Hashmap_apiBody\createuser.class
-.cucumber\cucumber.glue.tmp
