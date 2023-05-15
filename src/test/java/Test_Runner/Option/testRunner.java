@@ -13,11 +13,11 @@ import io.cucumber.junit.CucumberOptions;
 		glue={ "Go_RestApi_stepDefination" },
 		
 		
-		plugin= {"pretty","html:target/html_Report/Cucumber_report.html",
-				           "Junit:target/xml_Report/Cucumber_report.xml",
-		                   "Json:target/Json_Report/Cucumber_report.json"},
+		plugin= {"pretty","html:target/cucumber-reports/cucumber.html",
+				           "json:target/cucumber-reports/Cucumber.json",
+		                   "junit:target/cucumber-reports/Cucumber.xml"},
 		
-		tags=" @post or @delete"
+		tags="@post or @delete"
 		
 	
 		

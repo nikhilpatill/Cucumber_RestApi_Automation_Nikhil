@@ -2,11 +2,15 @@ package Go_RestApi_stepDefination;
 
 import java.util.HashMap;
 
+import org.junit.After;
 import org.junit.Assert;
 
 import PojoClasses.CreateUser_Date;
 import PojoClasses.UpdateUser_Date;
 import RestAssure_pages.RestApi_User;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -26,6 +30,29 @@ public class GoRestApi_stepdefination {
 	UpdateUser_Date data;
 	RestApi_User user;
 	CreateUser_Date Cdata;
+	
+	/*@BeforeStep()
+	public void beforeHook()
+	{
+		System.out.println("before hook each step exicute");
+	}
+	
+	@AfterStep
+	public void AfterHook()
+	{
+		System.out.println("after hook each step exicuted");
+	}
+	*/
+	@Before("@post")
+	public void before1_seanrio()
+	{
+		System.out.println("before hook each Senario exicute");
+	}
+	@io.cucumber.java.After("@delete")
+	public void after_seanrio()
+	{
+		System.out.println("afterhook each Senario exicute");
+	}
 	
 	
 	@Given("Create user payload {string},{string},{string},{string}")
@@ -58,6 +85,7 @@ public class GoRestApi_stepdefination {
 			Assert.assertEquals(res.getStatusCode(),expected);
 		}
 		if(httpmethod.equalsIgnoreCase("get"))
+	
 		{
 			Assert.assertEquals(res.getStatusCode(),expected);
 		}

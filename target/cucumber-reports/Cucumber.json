@@ -1,0 +1,187 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-15T08:56:58.141Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4988900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.before1_seanrio()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create User API test scenario",
+        "description": "",
+        "id": "create-user-api-test-scenarios;create-user-api-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5982700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Create user payload \"nikhil\",\"patil@tipai\",\"male\",\"active\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nikhil\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"patil@tipai\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"male\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"active\"",
+                  "offset": 50
+                }
+              ],
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.create_user_payload(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6970076700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls user API using post method",
+            "match": {
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.user_calls_user_api_using_post_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6981400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The \"post\" API call got success with status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post\"",
+                  "offset": 4
+                },
+                {
+                  "val": "201",
+                  "offset": 49
+                }
+              ],
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.the_api_call_got_success_with_status_code(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@post"
+          }
+        ]
+      }
+    ],
+    "name": "Create User API test scenarios",
+    "description": "",
+    "id": "create-user-api-test-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/ACreateUser.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-15T08:57:05.371Z",
+        "line": 6,
+        "name": "Delete User API test scenario",
+        "description": "",
+        "id": "delete-user-api-test-scenarios;delete-user-api-test-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 1997200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.after_seanrio()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1369845900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User has userId of already created user",
+            "match": {
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.user_has_user_id_of_already_created_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 338095600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User calls user API using delete method",
+            "match": {
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.user_calls_user_api_using_delete_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The \"delete\" API call got success with status code 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"delete\"",
+                  "offset": 4
+                },
+                {
+                  "val": "204",
+                  "offset": 51
+                }
+              ],
+              "location": "Go_RestApi_stepDefination.GoRestApi_stepdefination.the_api_call_got_success_with_status_code(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delete"
+          }
+        ]
+      }
+    ],
+    "name": "Delete User API test scenarios",
+    "description": "",
+    "id": "delete-user-api-test-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/DeletedataUser.feature",
+    "tags": []
+  }
+]

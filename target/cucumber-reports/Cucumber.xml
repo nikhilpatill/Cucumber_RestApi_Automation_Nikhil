@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="9.555">
+    <testcase classname="Create User API test scenarios" name="Create User API test scenario" time="7.187">
+        <system-out><![CDATA[Given Create user payload "nikhil","patil@tipai","male","active"............passed
+When User calls user API using post method..................................passed
+Then The "post" API call got success with status code 201...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Delete User API test scenarios" name="Delete User API test scenario" time="1.721">
+        <system-out><![CDATA[Given User has userId of already created user...............................passed
+When User calls user API using delete method................................passed
+Then The "delete" API call got success with status code 204.................passed
+]]></system-out>
+    </testcase>
+</testsuite>
